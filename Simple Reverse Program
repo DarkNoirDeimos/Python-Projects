@@ -1,0 +1,23 @@
+# A simple program that prints your text reversed
+
+text = input("Your text: ")        # input() asks for a text 
+
+reverse = ""                       # stores the (yet to be) reversed text
+
+x = len(text) - 1                  # variable 'x' storing the length of the text, - 1 since the first letter's index is 0
+
+while x >= 0:                        # while (the length of the text - 1) x is bigger or equal than 0
+    reverse = reverse + text[x]      # adds the correspondent letter (text[x]) to the variable 'reverse'
+    x = x - 1                        # subtracts 1 to x so the previous action can be done again, returning the other 
+                                     # letters from text
+    # you can add to help 
+    # you understand the process:
+    
+  # print(reverse)                                     
+                                     
+                                     
+                                     # This will go on and on until x == 0
+     
+   
+
+print(reverse)                       # prints the full text reversed!
